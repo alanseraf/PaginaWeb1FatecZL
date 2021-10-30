@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, Comentários, Listas, Layout, Elementos Semânticos">
+    <meta name="author" content="Alan Serafim">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>HTML</title>
+</head>
+<body>    
+    <header>
+            <div id="acessibilidade">
+                <ul id="atalhos">
+                    <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                    <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                    <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+                    <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                    <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                    <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                    <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                    <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+                </ul>
+            </div>
+            <img id="logo-topo" src="imagem/logo_fatec_branco.png" alt="imagem com a palavra Fatec e a expressão Zona Leste na cor branca">
+            <nav>
+                <label for="bt_menu"><img id="dropdown" src="imagem/menu.png" alt="menu"></label>
+                <input type="checkbox" id="bt_menu">
+                <ul id="menu-topo">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="comentarios.html">Comentários</a></li>
+                    <li><a href="metadados.html">Metadados</a></li>
+                    <li><a href="javascript:void(0);">Listas</a>
+                        <ul>
+                            <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                            <li><a href="lista_nao_ordenada.html">Lista não Ordenada</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layout.html">Layout</a></li>
+                    <li><a href="audioevideo.html">Áudio e Vídeo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>      
+            </nav>
+        </header>
+        <main id="conteudo-principal">
+            <h1>HTML: HyperText Markup Language</h1>
+                <h2>Comentários, Metadados, Listas, Layout, Áudio, Vídeo e Formulários</h2>
+                <audio controls>
+                    <source src="audio/index.mp3" type="audio/mpeg">
+                </audio>
+                <section>
+                    <ul id="principal-0">
+                        <li id="principal-1">
+                            <p>Este pequeno site trata do conteúdo da aula de HTML da disciplina Desenvolvimento Web 1, do curso superior de tecnologia em Desenvolvimento de Software Multiplataforma da FATEC Zona Leste.</p>
+                        </li>
+                        <li id="principal-2">
+                            <video controls width="600" height="400">
+                                <source src="video/videoFatec.mp4"  type="video/mp4">
+                                Este Navegador não suporta o elemento vídeo ou o formato de arquivo utilizado.
+                            </video>
+                        </li>
+                    </ul>
+                </section>
+        </main> 
+        <footer id="rodape">
+            <p>Desenvolvido por Alan Serafim &copy; 2021.</p>
+        </footer>
+</body>
+</html>
+

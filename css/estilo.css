@@ -431,7 +431,45 @@ input[type=reset]{
        
 }
 
+/*media query do formulário */
 
+@media screen and (max-width:630px) {
+
+    input, select {
+        width: 94%; /* 40% em relação ao elemento pai, no caso section */
+        height: 28px;
+    }
+    
+    label, legend {
+        font-size: 0.9em;
+    }
+    
+ 
+    textarea {
+        width: 94%;
+    }
+    
+    /*seletores de atributo */
+
+    input[type=submit]{
+        width: 20%;
+        height: 50px;
+        background-color: #941111;
+        color: white;
+        margin-left: 28%;
+        margin-top: 3%;
+        
+    }
+    
+    input[type=reset]{
+        width: 20%;
+        height: 50px;
+        background-color: #941111;
+        color: white;
+    }
+
+
+}
 
 
 

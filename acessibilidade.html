@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página web da Atlética da FATEC Zona Leste">
-    <meta name="keywords" content="Atlética, FATEC, Zona Leste">
-    <meta name="author" content="Alan Serafim, Douglas Silva, Nataly Correia, Thais Almeida">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, Comentários, Listas, Layout, Elementos Semânticos">
+    <meta name="author" content="Alan Serafim">
     <link rel="stylesheet" href="css/estilo.css">
-    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>ACESSIBILIDADE</title>
 </head>
 <body>
@@ -25,19 +25,32 @@
                 <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
             </ul>
         </div>
-        <img id="logo-topo" src="img/logo_atletica_semfundo.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca">
+        <img id="logo-topo" src="imagem/logo_fatec_branco.png" alt="imagem com a palavra Fatec e a expressão Zona Leste na cor branca">
         <nav>
+            <label for="bt_menu"><img id="dropdown" src="imagem/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
             <ul id="menu-topo">
-                <li><a href="javascript:void(0);">QUEM SOMOS</a></li>
-                <li><a href="javascript:void(0);">MODALIDADES</a></li>
-                <li><a href="javascript:void(0);">CAMPEONATOS</a></li>
-                <li><a href="javascript:void(0);">EVENTOS</a></li>
-                <li><a href="javascript:void(0);">LOJA VIRTUAL</a></li>
-            </ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não Ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="audioevideo.html">Áudio e Vídeo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>      
         </nav>
     </header>
-    <main>
-        <h1>ACESSIBILIDADE</h1>
+        <main id="conteudo-principal">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li>Acessibilidade</li>
+            </ul>
+            <h1>ACESSIBILIDADE</h1>
             <section>
                 <p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
 
@@ -80,23 +93,9 @@
                 <p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
                 <p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>
                 </section>
-    </main>
-    <footer>
-        <!--Inserir o rodapé aqui-->
-        <div id="localizacao">
-            <img id="ico-localizacao" src="img/localizar.ico" alt="imagem do ícone de localização na cor branca">
-            <p>Av. Águia de Haia, 2983  Cidade A. E. Carvalho - São Paulo - SP CEP: 03694-000</p>
-        </div>
-        <div id="ico">
-            <img id="ico-facebook" src="img/facebook_img_white.ico" alt="imagem do ícone do facebook na cor branca">
-            <img id="ico-instagram" src="img/instagram_img_white.ico" alt="imagem do ícone do instagram na cor branca">
-        </div>
-        <div id="email">
-            <img id="ico-email" src="img/email_img.ico" alt="imagem do ícone de email na cor branca">
-            <p>fateczlatletica@gmail.com</p>
-        </div>
-        <p>Desenvolvido por Alan Serafim, Douglas Silva, Nataly Correia e Thais Almeida &copy; 2021.</p>
-        
-    </footer>
+        </main> 
+        <footer id="rodape">
+            <p>Desenvolvido por Alan Serafim &copy; 2021.</p>
+        </footer>
 </body>
 </html>

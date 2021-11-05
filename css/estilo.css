@@ -1,10 +1,12 @@
 *{margin:0; padding: 0}*
 
+
 body {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: black;
+    height: auto;
 }
-
 
 /*Barra de acessibilidade*/
 
@@ -41,183 +43,216 @@ body {
     padding-left: 0.5%;
 }
 
-/*Menu superior*/
-
-nav {
-    background-color: rgba(99, 1, 1, 1) /*rgba(232, 182, 2, 0.1)*/;
-    height: 165px;
-
-}
 
 #logo-topo {
-    width: 150px;
+    width: 12%;
     height: auto;
-    float: left;
-    margin-left: 1%;
-    margin-top: 1%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+/*Menu superior*/
+
+header{
+    background-color: rgb(78, 0, 0);
+    color: white
+}
+
+nav {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5% 0 0 5%;
 }
 
 #menu-topo {
-    padding-left: 25%;
-    
+    list-style: none;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    padding-bottom: 10%;
+}
+
+#menu-topo a {
+    list-style: none; 
 }
 
 #menu-topo li{
     display: inline-block;
-    margin-top: 9%;
-    margin-left: 1%;
 }
 
-#menu-topo a {
+#menu-topo li a{
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: rgba(232, 182, 2, 0.836) /* rgba(99, 1, 1, 1)*/;
-}
-
-
-/*Conteúdo principal*/
-main {
-    background-color: white;
-    text-align: center;
-    padding: 2% 2% 0 2%;
+    color: white;
+    padding: 5px 10px;
 
 }
 
-#banner {
-    width: 40%;
-    height: auto;
+#menu-topo li a:hover{
+    transition: 0.7s;
+    border: 1px solid white;
 }
 
-/*Mural*/
-h1 {
-    text-align: left;
-    padding: 2% 2% 2% 0;
+/*SUBMENU do Menu superior*/
+
+#menu-topo li ul {
+    position: absolute;
+    display: none;
 }
 
-h2 {
-    text-align: left;
-}
+#menu-topo li:hover ul, #menu-topo li.over ul{
+    display: block
+} 
 
-p {
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.6em;
-}
-
-
-#caixa-mural {
-  border: solid 1px black;
-  margin: 2%;
-}
-
-#mural li{
-    width: auto;
-    list-style: none;
+#menu-topo li ul li{
     display: block;
+    margin: 2% 0;
+}
+
+#menu-topo li ul li a {
+    color: white;     
+}
+
+/* Menu responsivo*/
+label [for="bt_menu"]{
+    display: none;
+}
+#bt_menu{
+    display: none;
+}
+#dropdown {
+    width: 32px;
+    display: none;
 
 }
 
-.quadro-mural {
-    width: 98%;
-    display: flex;
+/* Conteúdo principal */
+#conteudo-principal{
+    background-color: #e0ded9;
 }
 
-.box-imagem {
-    width: 50%;
+#conteudo-principal h1 {
+    padding: 32px 0 0 1.5%;
+    text-align: left;
 }
 
-/*Rodapé*/
-footer {
+ 
+#conteudo-principal h2 {
+    padding: 2% 0 32px 1.5%;
+    text-align: left;
+}
+
+#conteudo-principal p{
+    margin: 24px 0 0 24px; /*128px 0 128px 18px;*/
+    text-align: justify;
+    font-size: 24px;
+}
+
+#principal-0{
+    list-style: none;
+}
+
+#principal-1, #principal-2, #principal-3, #principal-4{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#principal-1, #principal-3{
+padding-right: 2%;
+padding-bottom: 4%;
+}
+
+#principal-2, #principal-4{
+    padding-left: 10%;
+    padding-bottom: 4%;
+}
+
+audio {
+    padding: 1% 1%;
+}
+
+
+.exemplo {
+    width: 88%;
+    height: auto;
+    max-height: 520px;
+    padding: 24px;
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#rodape {
+    padding: 185px 0 0 0;
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
     text-align: center;
-    clear:left;
-    padding-top: 2%;
-    background-color: rgba(99, 1, 1, 1);
+    font-size: 14px;
+    font-weight: bold;
+    background-color:  rgb(78, 0, 0);
+    color: white;       
+}
+
+/*formulário*/
+form {
+    padding: 3%;
+}
+
+input, select {
+    width: 40%; /* 40% em relação ao elemento pai, no caso section */
+    height: 40px;
+    background-color: #fcf8f8;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+label, legend {
+    font-weight: bold;
+    font-size: 1.2;
+    margin-left: 5px;
+}
+
+fieldset {
+    border-color: #500101;
+    border-radius: 15px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+    
+}
+
+textarea {
+    width: 40%;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+/*seletores de atributo */
+
+input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: #941111;
     color: white;
 }
 
-footer p{
-    text-align: center;
+input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: #941111;
+    color: white;
 }
 
-#ico {
-    padding-right: 12%;
-    float: right;
-}
-
-#ico-facebook, #ico-instagram, #ico-email {
-    width: 52px;
-    height: auto;
-}
-#ico-instagram{
-    padding-left: 8px;
-}
-#ico-localizacao {
-    width: 28px;
-    height: auto;
-}
-
-#ico-localizacao, #ico-email{
-    display: inline-block;
-}
-#localizacao p, #email p{
-    display: inline-block;
-}
-
-
-#localizacao, #email, #ico {
-    display: block;
-}
-
-#email {
-    padding-left: 20%;
-    padding-top: 1%;
-    padding-bottom: 2%;
-}
-
-#localizacao p{
-    margin-bottom: 1%;
-    vertical-align: bottom;
-}
-
-#email p {
-    vertical-align: super;
+/* adiciona a classe required no label dos intens marcados como required*/
+.required:after{
+    content: " *";
+    color: red;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*breadcrumbs*/
-
+/*breadcrumbs- Menu de localização - "migalhas de pão"*/
 .breadcrumb {
     padding-left: 1.5%;
     padding-top: 1%;
@@ -243,3 +278,212 @@ footer p{
 .breadcrumb li a:hover{
     text-decoration: underline;
 }
+
+/* Media queries */
+
+/* media query menu responsivo */
+@media screen and (max-width:630px) {
+    #logo-topo {
+        display: block;
+    }
+    #menu-topo{
+        display: none;
+    }
+    #dropdown{
+        display: inline-block;
+    }
+    label[for="bt_menu"]{
+        display: block;
+        border: none;
+    }
+    #bt_menu:checked ~ #menu-topo {
+        display: inline-block;
+        border: none;
+    }
+    #menu-topo li {
+        position: relative;
+        float: left;
+        width: 100%;
+        border: none;
+    }
+    #menu-topo li ul {
+        position: static;
+        width: 100%;
+        border: none;
+    }
+    #menu-topo li ul li{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        float: left;
+        display: block;
+        margin-left:4%;
+        border: none;
+    }
+}
+
+/* media query da barra de acessibilidade*/
+
+@media screen and (max-width: 1440px) { 
+    #pgacess{
+        padding-left: 35%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #pgacess{
+        padding-left: 29%;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    #pgacess{
+        padding-left: 18%;
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    #pgacess{
+        padding-left: 1%;
+    } 
+}
+
+@media screen and (max-width: 630px){
+    #atalhos{
+        font-size: 0.8em;
+        padding: 0;
+        text-align: center ;
+    }
+    ul#atalhos li{
+       display: none;
+     }
+
+     ul#atalhos li#pgacess {
+         display: inline;
+     }
+
+     ul#atalhos li.contraste {
+         display: inline;
+     }
+     ul#atalhos li.fonte{
+         display: inline;
+     }
+
+}   
+
+/*media query do vídeo */
+
+@media screen and (max-width:630px) {   
+    video{
+      width:100%;
+   }
+
+}
+
+/*media query do conteudo */
+
+@media screen and (max-width:630px) {
+    
+
+    audio {
+        padding-left: 8%;
+    }
+
+    #principal-1, #principal-2, #principal-3, #principal-4{
+        width: 100%;
+        display: inline;
+    }
+
+    #principal-1, #principal-3{
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    #principal-2, #principal-4{
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    #conteudo-principal h1 {
+        padding: 5%;
+        text-align: center;
+    }
+    
+     
+    #conteudo-principal h2 {
+        padding: 3%;
+        text-align: center;
+    }
+    
+    #conteudo-principal p{
+        margin: 3%;
+        font-size: 1.2em;
+    }
+
+    .exemplo {
+        padding: 5%;
+    }
+    
+    #rodape {
+        padding: 25% 0 0 0;
+        font-size: 0.7em;
+    }
+       
+}
+
+/*media query do formulário */
+
+@media screen and (max-width:630px) {
+
+    input, select {
+        width: 94%; /* 40% em relação ao elemento pai, no caso section */
+        height: 28px;
+    }
+    
+    label, legend {
+        font-size: 0.9em;
+    }
+    
+ 
+    textarea {
+        width: 94%;
+    }
+    
+    /*seletores de atributo */
+
+    input[type=submit]{
+        width: 20%;
+        height: 50px;
+        background-color: #941111;
+        color: white;
+        margin-left: 28%;
+        margin-top: 3%;
+        
+    }
+    
+    input[type=reset]{
+        width: 20%;
+        height: 50px;
+        background-color: #941111;
+        color: white;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* cores
+cinza: #e0ded9
+branco: #f3f1ec
+vermelho: rgb(78, 0, 0)
+*/
+
+
+
